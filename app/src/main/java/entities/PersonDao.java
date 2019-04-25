@@ -1,12 +1,12 @@
-package data;
+package entities;
 
-import android.app.Person;
+
 import android.arch.persistence.room.Insert;
 import android.arch.persistence.room.Query;
 
 import java.util.List;
 
-public class PersonDao {
+public interface PersonDao {
     @Insert
     void insertPerson(Person person);
 

@@ -4,22 +4,22 @@ import android.arch.persistence.room.Entity;
 import android.arch.persistence.room.PrimaryKey;
 
 @Entity
-public class person {
+public class Person {
     @PrimaryKey(autoGenerate = true)
     private int id;
 
     private String name;
 
-    String getName() {
+    public String getName() {
         return this.name;
     }
-    int getId() {
+    public int getId() {
         return this.id;
     }
-    void setId(int idNum){
+    public void setId(int idNum){
         id = idNum;
     }
-    void setName(String inputName){
+    public void setName(String inputName){
         name = inputName;
     }
 
